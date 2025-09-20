@@ -1,27 +1,19 @@
-# back up any existing JS config
-mv app.config.js app.config.js.bak 2>/dev/null || true
-mv app.config.ts app.config.ts.bak 2>/dev/null || true
-
-# create a clean app.config.js
-cat > app.config.js <<'JS'
 /** Expo app config (authoritative) */
 module.exports = ({ config }) => ({
   ...config,
   name: "Kevin Durkan Trophy",
   slug: "golf-weekend",
-  owner: "YOUR_EXPO_USERNAME_OR_ORG",      // <-- put your Expo username or org
+  owner: "kpdurkan",            // ← your Expo username or org
   scheme: "kdt",
   ios: {
     bundleIdentifier: "com.kdurkan.kdt",
     infoPlist: { ITSAppUsesNonExemptEncryption: false },
   },
-  android: {
-    package: "com.kdurkan.kdt",
-  },
+  android: { package: "com.kdurkan.kdt" },
   platforms: ["ios", "android", "web"],
   web: { bundler: "metro" },
   extra: {
     ...(config.extra || {}),
-    eas: { projectId: "6e99c8c2-9d72-47e7-a82b-4cc1eaa48380" } // <-- your real EAS project UUID
+    eas: { projectId: "6e99c8c2-9d72-47e7-a82b-4cc1eaa48380" } // ← your real EAS project UUID
   },
 });
