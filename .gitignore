@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+build/
+web-build/
+.expo-shared/
+.expo/*
+*.log
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+.env
+.env.*

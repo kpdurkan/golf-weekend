@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Kevin Durkan Trophy",
+    "slug": "golf-weekend",
+    "owner": "kpdurkan",
+    "scheme": "kdt",
+    "ios": {
+      "bundleIdentifier": "com.kdurkan.kdt",
+      "infoPlist": { "ITSAppUsesNonExemptEncryption": false }
+    },
+    "android": {
+      "package": "com.kdurkan.kdt"
+    },
+    "platforms": ["ios", "android", "web"],
+    "web": { "bundler": "metro" },
+    "extra": {
+      "eas": { "projectId": "6e99c8c2-9d72-47e7-a82b-4cc1eaa48380" }
+    }
+  }
+}
