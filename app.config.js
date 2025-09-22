@@ -3,15 +3,16 @@ module.exports = () => ({
   name: "Kevin Durkan Trophy",
   slug: "golf-weekend",
   scheme: "kdt",
-  // 👇 App icon shown on the home screen / app list
-  icon: "./assets/brand/kdt-logo.png",
-
-  // 👇 Splash shown while the JS bundle loads
+  
+  icon: "./assets/brand/kdt-logo.png",           // your existing app icon
   splash: {
-    image: "./assets/brand/kdt-splash.png",
-    backgroundColor: "#0a1a38",    // your navy
-    resizeMode: "contain"          // keeps full logo visible
+    image: "./assets/brand/kdt-splash.png",      // use 2048×2048
+    backgroundColor: "#0a1a38",
+    resizeMode: "contain"
   },
+  // optional adaptive icon on Android:
+  // android: { adaptiveIcon: { foregroundImage: "./assets/brand/kdt-logo.png", backgroundColor: "#0a1a38" } },
+
 
   ios: {
     bundleIdentifier: "com.kdurkan.kdt",
