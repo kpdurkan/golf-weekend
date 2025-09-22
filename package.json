@@ -15,7 +15,7 @@
     "@react-navigation/bottom-tabs": "^6.5.20",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
-    "@supabase/supabase-js": "^2.45.4",
+    "@supabase/supabase-js": "^2.57.4",
     "@tanstack/react-query": "^5.51.1",
     "expo": "~51.0.15",
     "expo-linking": "~6.3.1",
@@ -31,6 +31,7 @@
     "@babel/core": "^7.24.5",
     "@types/react": "^18.3.24",
     "babel-preset-expo": "~11.0.6",
+    "react-devtools-core": "^6.1.5",
     "typescript": "~5.3.3"
   }
 }
